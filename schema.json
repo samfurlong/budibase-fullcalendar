@@ -140,10 +140,21 @@
           {
             "type": "event",
             "label": "On Click",
-            "key": "calendarEvent",
+            "key": "calendarClick",
             "context": [
               {
                 "label": "Clicked Event",
+                "key": "value"
+              }
+            ]
+          },
+          {
+            "type": "event",
+            "label": "On Drop",
+            "key": "calendarDrop",
+            "context": [
+              {
+                "label": "Date Moved",
                 "key": "value"
               }
             ]

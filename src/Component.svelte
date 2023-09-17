@@ -10,7 +10,8 @@
   import { langs, codeLang } from './lang';
 
   export let language;
-  export let calendarEvent;
+  export let calendarClick;
+  export let calendarDrop;
 
   export let mappingId;
   export let mappingTitle;
@@ -87,7 +88,14 @@
     locale: language,
     dayMaxEvents: true,
     eventClick: (event) => {
-      calendarEvent({
+      calendarClick({
+        value: event.event,
+      });
+      console.log(JSON.parse(text));
+      console.log(event.event.title);
+    },
+    eventDrop: (event) => {
+      calendarDrop({
         value: event.event,
       });
       console.log(JSON.parse(text));

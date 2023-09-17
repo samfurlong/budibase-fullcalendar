@@ -19,6 +19,11 @@
           },
           {
             "type": "text",
+            "key": "mappingId",
+            "label": "Row ID"
+          },
+          {
+            "type": "text",
             "key": "mappingTitle",
             "label": "Title Mapping"
           },
@@ -59,6 +64,11 @@
             "label": "DataProvider",
             "key": "dataProvider2",
             "required": false
+          },
+          {
+            "type": "text",
+            "key": "mappingId2",
+            "label": "Row ID"
           },
           {
             "type": "text",
@@ -123,13 +133,7 @@
           {
             "type": "select",
             "key": "language",
-            "options": [
-              "pt",
-              "en",
-              "fr",
-              "es",
-              "ru"
-            ],
+            "options": ["pt", "en", "fr", "es", "ru"],
             "label": "language",
             "defaultValue": "pt"
           },

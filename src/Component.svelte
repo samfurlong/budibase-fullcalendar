@@ -5,6 +5,7 @@
   import daygridPlugin from '@fullcalendar/daygrid';
   import timeGridPlugin from '@fullcalendar/timegrid';
   import listPlugin from '@fullcalendar/list';
+  import interactionPlugin from '@fullcalendar/interaction';
   import { onMount } from 'svelte';
   import { langs, codeLang } from './lang';
 
@@ -53,6 +54,7 @@
           color: eventColor,
           event: event,
           allDay: allday,
+          editable: true,
         });
       });
     }
@@ -67,6 +69,7 @@
           color: eventColor2,
           event: event,
           allDay: allday2,
+          editable: true,
         });
       });
     }
@@ -79,7 +82,7 @@
       center: headerOptionsCenter,
       end: headerOptionsEnd,
     },
-    plugins: [daygridPlugin, listPlugin, timeGridPlugin],
+    plugins: [daygridPlugin, listPlugin, timeGridPlugin, interactionPlugin],
     initialDate: Date.now(),
     locale: language,
     dayMaxEvents: true,

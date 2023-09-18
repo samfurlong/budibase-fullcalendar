@@ -48,6 +48,11 @@
             "label": "AllDay Mapping"
           },
           {
+            "type": "boolean",
+            "key": "editable",
+            "label": "Editable"
+          },
+          {
             "type": "color",
             "label": "Color Mapping",
             "key": "mappingColor",
@@ -96,9 +101,67 @@
             "label": "AllDay Mapping"
           },
           {
+            "type": "boolean",
+            "key": "editable2",
+            "label": "Editable"
+          },
+          {
             "type": "color",
             "label": "Color Mapping",
             "key": "mappingColor2",
+            "defaultValue": "#000"
+          }
+        ]
+      },
+      {
+        "section": true,
+        "name": "Event Group 3",
+        "settings": [
+          {
+            "type": "dataProvider",
+            "label": "DataProvider",
+            "key": "dataProvider3",
+            "required": false
+          },
+          {
+            "type": "text",
+            "key": "mappingId3",
+            "label": "Row ID"
+          },
+          {
+            "type": "text",
+            "key": "mappingTitle3",
+            "label": "Title Mapping"
+          },
+          {
+            "type": "text",
+            "key": "mappingDate3",
+            "label": "Date Mapping"
+          },
+          {
+            "type": "text",
+            "key": "mappingStart3",
+            "label": "Start Mapping"
+          },
+          {
+            "type": "text",
+            "key": "mappingEnd3",
+            "label": "End Mapping"
+          },
+          {
+            "type": "boolean",
+            "key": "allday3",
+            "label": "AllDay Mapping"
+          },
+          {
+            "type": "boolean",
+            "key": "editable3",
+            "label": "Editable"
+          },
+          {
+            "type": "color",
+            "label": "Color Mapping",
+            "key": "mappingColor3",
             "defaultValue": "#000"
           }
         ]

@@ -18,21 +18,33 @@
   export let mappingDate;
   export let mappingStart;
   export let mappingEnd;
+  export let editable;
 
   export let mappingId2;
   export let mappingTitle2;
   export let mappingDate2;
   export let mappingStart2;
   export let mappingEnd2;
+  export let editable2;
+
+  export let mappingId3;
+  export let mappingTitle3;
+  export let mappingDate3;
+  export let mappingStart3;
+  export let mappingEnd3;
+  export let editable3;
 
   export let dataProvider;
   export let dataProvider2;
+  export let dataProvider3;
 
   export let mappingColor;
   export let mappingColor2;
+  export let mappingColor3;
 
   export let allday;
   export let allday2;
+  export let allday3;
 
   export let headerOptionsStart;
   export let headerOptionsCenter;
@@ -55,7 +67,7 @@
           color: eventColor,
           event: event,
           allDay: allday,
-          editable: true,
+          editable: editable,
         });
       });
     }
@@ -70,7 +82,22 @@
           color: eventColor2,
           event: event,
           allDay: allday2,
-          editable: true,
+          editable: editable2,
+        });
+      });
+    }
+    if (dataProvider3.rows) {
+      dataProvider3.rows.forEach((event) => {
+        let eventColor3 = mappingColor3 ?? '#eb4034';
+        eventsList.push({
+          title: event[mappingTitle3],
+          date: event[mappingDate3],
+          start: event[mappingStart3],
+          end: event[mappingEnd3],
+          color: eventColor3,
+          event: event,
+          allDay: allday3,
+          editable: editable3,
         });
       });
     }

@@ -209,11 +209,16 @@
         "section": true,
         "settings": [
           {
-            "type": "select",
+            "type": "text",
+            "key": "timezone",
+            "label": "Timezone",
+            "defaultValue": "UTC"
+          },
+          {
+            "type": "text",
             "key": "language",
-            "options": ["pt", "en", "fr", "es", "ru"],
-            "label": "language",
-            "defaultValue": "pt"
+            "label": "Language",
+            "defaultValue": "en"
           },
           {
             "type": "event",

@@ -10,6 +10,7 @@
   import { langs, codeLang } from './lang';
 
   export let language;
+  export let timezone;
   export let calendarClick;
   export let calendarDrop;
 
@@ -119,6 +120,7 @@
     plugins: [daygridPlugin, listPlugin, timeGridPlugin, interactionPlugin],
     initialDate: Date.now(),
     locale: language,
+    timeZone: timezone,
     dayMaxEvents: true,
     eventClick: (event) => {
       calendarClick({

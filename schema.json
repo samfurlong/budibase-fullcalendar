@@ -19,6 +19,11 @@
           },
           {
             "type": "text",
+            "key": "tag1",
+            "label": "Reference Name"
+          },
+          {
+            "type": "text",
             "key": "mappingId",
             "label": "Row ID"
           },
@@ -72,6 +77,11 @@
           },
           {
             "type": "text",
+            "key": "tag2",
+            "label": "Reference Name"
+          },
+          {
+            "type": "text",
             "key": "mappingId2",
             "label": "Row ID"
           },
@@ -122,6 +132,11 @@
             "label": "DataProvider",
             "key": "dataProvider3",
             "required": false
+          },
+          {
+            "type": "text",
+            "key": "tag3",
+            "label": "Reference Name"
           },
           {
             "type": "text",

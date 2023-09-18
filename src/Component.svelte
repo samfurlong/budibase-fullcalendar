@@ -13,6 +13,7 @@
   export let calendarClick;
   export let calendarDrop;
 
+  export let tag1;
   export let mappingId;
   export let mappingTitle;
   export let mappingDate;
@@ -20,6 +21,7 @@
   export let mappingEnd;
   export let editable;
 
+  export let tag2;
   export let mappingId2;
   export let mappingTitle2;
   export let mappingDate2;
@@ -27,6 +29,7 @@
   export let mappingEnd2;
   export let editable2;
 
+  export let tag3;
   export let mappingId3;
   export let mappingTitle3;
   export let mappingDate3;
@@ -68,6 +71,7 @@
           event: event,
           allDay: allday,
           editable: editable,
+          tag: tag1,
         });
       });
     }
@@ -83,6 +87,7 @@
           event: event,
           allDay: allday2,
           editable: editable2,
+          tag: tag2,
         });
       });
     }
@@ -98,6 +103,7 @@
           event: event,
           allDay: allday3,
           editable: editable3,
+          tag: tag3,
         });
       });
     }
@@ -118,15 +124,11 @@
       calendarClick({
         value: event.event,
       });
-      console.log(JSON.parse(text));
-      console.log(event.event.title);
     },
     eventDrop: (event) => {
       calendarDrop({
         value: event.event,
       });
-      console.log(JSON.parse(text));
-      console.log(event.event.title);
     },
     events: eventsList,
     eventColor: '#378006',
